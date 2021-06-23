@@ -79,6 +79,7 @@ p {
 
 .blue {
   color: #0067b8;
+  cursor: pointer;
 }
 
 button {
