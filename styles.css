@@ -29,7 +29,7 @@ body {
   width: 440px;
   height: 338px;
   position: absolute;
-  top: 50%;
+  top: 42.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--font-color);
@@ -42,8 +42,143 @@ body {
 .content {
   background: var(--background-content);
   margin-bottom: 20px;
+  padding: 44px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
 }
 
 .sign-in-options {
   background: var(--background-content);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+  line-height: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  vertical-align: middle;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  cursor: pointer;
+  padding: 10px 44px 10px 44px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima",
+    "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI",
+    "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha",
+    "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic",
+    "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue",
+    "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti",
+    "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+p {
+  font-size: 0.8125rem;
+}
+
+.blue {
+  color: #0067b8;
+}
+
+button {
+  display: block;
+  color: #fff;
+  background-color: #0067b8;
+  border-color: #0067b8;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 32px;
+  border: none;
+  min-width: 108px;
+  line-height: normal;
+  padding: 4px 12px 4px 12px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  float: right;
+  margin-bottom: 44px;
+}
+
+.not-hidden {
+  border-style: solid;
+  padding: 6px, 10px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.6);
+  height: 36px;
+  outline: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding-left: 0;
+  display: block;
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+  font: inherit;
+  transition: border-color 2s;
+}
+
+.button {
+  margin-bottom: 44px;
+}
+
+.not-hidden:focus {
+  border-color: #0067b8;
+}
+
+#key {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  border: 0;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+    height: 0;
+    background: #fff;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    color: var(--font-color);
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+    background: white;
+  }
+
+  .content {
+    padding: 24px;
+    box-shadow: none;
+  }
+
+  .sign-in-options {
+    background: var(--background-content);
+    box-shadow: none;
+    line-height: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    vertical-align: middle;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .wrap-sign-in {
+    display: inline-block;
+    width: 97%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin: auto;
+    text-align: left;
+    padding: 10px 44px 10px 44px;
+  }
 }
