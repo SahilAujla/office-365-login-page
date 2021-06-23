@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-}
-
 :root {
   --background-content: rgb(255, 255, 255);
   --font-color: #1b1b1b;
@@ -35,7 +32,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
   color: var(--font-color);
   font-size: 0.9375rem;
   line-height: 1.25rem;
