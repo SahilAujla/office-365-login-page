@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+}
+
+:root {
+  --background-content: rgb(255, 255, 255);
+  --font-color: #1b1b1b;
+}
+
+body {
+  margin: 0;
+  background-image: url(images/Background.svg);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue",
+    "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi",
+    "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga",
+    "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee",
+    "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic",
+    "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue",
+    "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti",
+    "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+.container {
+  width: 440px;
+  height: 338px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: var(--font-color);
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.content {
+  background: var(--background-content);
+  margin-bottom: 20px;
+}
+
+.sign-in-options {
+  background: var(--background-content);
+}

