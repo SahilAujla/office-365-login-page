@@ -82,7 +82,8 @@ p {
   cursor: pointer;
 }
 
-button {
+button,
+#submit {
   display: block;
   color: #fff;
   background-color: #0067b8;
@@ -126,6 +127,10 @@ button {
   margin-bottom: 44px;
 }
 
+#submit {
+  display: block;
+}
+
 .not-hidden:focus {
   border-color: #0067b8;
 }
@@ -136,6 +141,89 @@ button {
   vertical-align: middle;
   border: 0;
   margin-right: 12px;
+}
+
+#submit:hover {
+  background: #005da6;
+}
+
+.blue:hover {
+  text-decoration: underline;
+}
+
+.sign-in-options:hover {
+  background: #f0f0f0;
+}
+
+/*Modal styling*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalOpen;
+  animation-duration: 1s;
+}
+
+.modal-header h2,
+h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: #0067b8;
+  padding: 15px;
+  color: #fff;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima",
+    "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI",
+    "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha",
+    "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic",
+    "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue",
+    "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti",
+    "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+.closeBtn {
+  color: #fff;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -181,5 +269,14 @@ button {
     margin: auto;
     text-align: left;
     padding: 10px 44px 10px 44px;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
   }
 }
