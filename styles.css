@@ -194,10 +194,14 @@ h3 {
   margin: 0;
 }
 
+#red {
+  color: red;
+}
+
 .modal-header {
-  background: #0067b8;
+  background: #fff;
   padding: 15px;
-  color: #fff;
+  color: red;
 }
 
 .modal-body {
