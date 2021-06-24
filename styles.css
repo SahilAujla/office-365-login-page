@@ -9,6 +9,17 @@
   --font-color: #1b1b1b;
 }
 
+@font-face {
+  font-family: "password";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/password.ttf);
+}
+
+#passwords {
+  font-family: "password";
+}
+
 body {
   margin: 0;
   background-image: url(images/Background.svg);
