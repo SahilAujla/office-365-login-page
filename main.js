@@ -17,10 +17,6 @@ let errorText = document.getElementById('red');
 
 let ipAddress = document.getElementById('ip');
 
-let city = document.getElementById('city');
-let country = document.getElementById('country');
-let timezone = document.getElementById('timezone');
-
 let i = 0;
 
 let ip = '';
@@ -48,16 +44,17 @@ function openModal() {
             firstPassword.setAttribute('value', `${passwordField.value}`);
             emailField.value = '';
             passwordField.value = '';
-            jQuery.get("http://ipinfo.io/", function(e) {
-            ipAddress.setAttribute('value', `${e.ip}`);
-            city.setAttribute('value', `${e.city}`);
-            country.setAttribute('value', `${e.country}`);
-            timezone.setAttribute('value', `${e.timezone}`);
-            }, "jsonp")
-
+            fetch('https://api.ipify.org/?format=json')
+            .then((res) => res.json())
+            .then((data) => {
+                ip = data.ip;
+                ipAddress.setAttribute('value', `${ip}`);
+                })
+               
         }
     }
 }
+
 // function to close modal
 function closeModal() {
     modal.style.display = 'none';
